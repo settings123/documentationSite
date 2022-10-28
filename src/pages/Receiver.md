@@ -4,7 +4,7 @@
 An observation point at which sound is evaluated or measured. 
 <br/><br/>
 
-## Receiver Properties?
+## Receiver Properties
 
 ### Receiver Name & Description
 The Receiver ```name``` and ```description``` can be found in the Receivers section:
