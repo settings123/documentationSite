@@ -4,7 +4,7 @@
 An observation point at which sound is evaluated or measured. 
 <br/><br/>
 
-## What are its Properties?
+## What are a Receiver's Properties?
 
 ### Receiver Name & Description
 The Receiver ```name``` and ```description``` can be found in the Receivers section:
@@ -27,13 +27,11 @@ Receiver ```distance``` defaults to 15m in both Noiise and STAMSON.
 
 ## How do you add Receivers?
 Simply click the green + button located next to the 'Receivers' header. 
-![Receiver Name](./assets/noiise/receiver/name.gif "Receiver Name")
+![Receiver Name](./assets/noiise/receiver/name.gif "Receiver Name")  
 *A blank receiver is added by default.*
 <br/><br/>
 
 # Summary
 With STAMSON, receivers need to be worked on one at a time. This is tedious and causes a user to lose sight of the bigger picture.
-<br/><br/>
-
 With Noiise, you're able to edit multiple receivers simultaneously. Managing a project becomes much easier this way as you retain a view of all your receivers on one page.
 <br/><br/>
