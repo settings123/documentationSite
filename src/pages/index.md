@@ -27,9 +27,10 @@ Your credentials will only be shown to you **only once** if you proceed with cre
 We shouldn't need to touch the database once it's setup and deleting it will mean having to migrate existing users. It also means having to associate the app to the DB again, as it wouldn't know to do this automatically. It will however do this automatically if the app and DB are deployed together (At the same time). When a DB is attached to your app you'll receive a message like:
 
 ```
-The following secret was added to noiise: DATABASE_URL=postgres://noiise:CCKGrvSV7PfODap@top2.nearest.of.noiise-db.internal:5432/noiise
+The following secret was added to noiise: DATABASE_URL=postgres://noiise:CKfKGrvSV7Pd3Dap@top2.nearest.of.noiise-db.internal:5432/noiise
 Postgres cluster noiise-db is now attached to noiise
 ```
+The above is not an actual DB URL.  
 
 Please note that adding```?SSL=true``` to a Database URI/URL won't work on FLy.io like it does for other databses liksuch as e ElephantSQL or Heroku.
 
@@ -69,7 +70,7 @@ flyctl proxy 5432 -a noiise-staging-db
 
 ## #Attach the DB to the existing app
 Run this first to unset the current one:  
-```flyctl secrets unset -a noiise-staging DATABASE_URL ```
+```flyctl secrets unset -a noiise-staging DATABASE_URL ```  
 Then:  
 ```flyctl pg attach -a noiise-staging noiise-staging-db```
 
