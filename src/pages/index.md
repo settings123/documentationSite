@@ -56,6 +56,23 @@ https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posg
 3) Creating Mr. Chiu Manually:  
 `INSERT INTO users VALUES ('4bc140c3-17cc-4df5-bd50-08b962fce8ef', 'Chiu', 'chiu@moe.ca', '$2b$12$EHpM9qNmOw575EQtFNYugOfJ8xTXlwgk0cOB9E/xYkTtFwCydZMWG'); 
 `
+
+# Create a PostgresDB on its own
+```flyctl postgres create```. 
+Details below, such as password. 
+
+### Connect to it
+```flyctl postgres connect -a noiise-staging-db```. 
+
+### Creating a Proxy to access it with a GUI (Optional)
+flyctl proxy 5432 -a noiise-staging-db
+
+## #Attach the DB to the existing app
+Run this first to unset the current one:  
+```flyctl secrets unset -a noiise-staging DATABASE_URL ```
+Then:  
+```flyctl pg attach -a noiise-staging noiise-staging-db```
+
 # TLS/SSL
 1) Go to the Fly.io dashboard and locate the Noiise app: https://fly.io/app/sign-in?return_to=%2Fdashboard  
 ![dashboard](../dashboard.png "Dashboard View")  
