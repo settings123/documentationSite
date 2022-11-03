@@ -48,7 +48,7 @@ OR
 
 2) Show users in users Table  
 `\l `  
-`\c noiise_accounts `  
+`\c noiise `  
 `\dt SELECT * FROM users `  
 
 # Postgres User Migration
