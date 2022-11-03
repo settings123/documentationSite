@@ -75,13 +75,15 @@ Run this first to unset the current one:
 ```flyctl secrets unset -a noiise-staging DATABASE_URL ```  
 Then:  
 ```flyctl pg attach -a noiise-staging noiise-staging-db```
-### Adding a Column in an exisitng DB
-Add column in DB with default value of `true`:  
-```alter table users add column authorized boolean default true NOT NULL;```
 
 ### View all Columns in a Table
 Once connected to noiise database (See *Postgres Commands* section), view `users` table:  
 ```\d+ users```  
+
+### Adding a Column in a DB
+Add column in DB with default value of `true`:  
+```alter table users add column authorized boolean default true NOT NULL;```
+
 
 # Deploy an existing app
 In the earlier deployment example we were deploying for the first time. When you make changes and want to re-deploy (outside of a pipeline) you
