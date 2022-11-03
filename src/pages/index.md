@@ -58,7 +58,7 @@ https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posg
 `INSERT INTO users VALUES ('4bc140c3-17cc-4df5-bd50-08b962fce8ef', 'Chiu', 'chiu@moe.ca', '$2b$12$EHpM9qNmOw575EQtFNYugOfJ8xTXlwgk0cOB9E/xYkTtFwCydZMWG'); 
 `
 
-# Create a PostgresDB on its own
+# Create a PostgresDB (standalone)
 ```flyctl postgres create```. 
 Details below, such as password. 
 
@@ -68,7 +68,7 @@ Details below, such as password.
 ### Creating a Proxy to access it with a GUI (Optional)
 flyctl proxy 5432 -a noiise-staging-db
 
-## #Attach the DB to the existing app
+## Attach the DB to the existing app
 Run this first to unset the current one:  
 ```flyctl secrets unset -a noiise-staging DATABASE_URL ```  
 Then:  
