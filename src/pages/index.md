@@ -74,6 +74,10 @@ Run this first to unset the current one:
 Then:  
 ```flyctl pg attach -a noiise-staging noiise-staging-db```
 
+# Deploy an existing app
+In the earlier deployment example we were deploying for the first time. When you make changes and want to re-deploy (outside of a pipeline) you
+can do so through the ```flyctl deploy``` command.
+
 # TLS/SSL
 1) Go to the Fly.io dashboard and locate the Noiise app: https://fly.io/app/sign-in?return_to=%2Fdashboard  
 ![dashboard](../dashboard.png "Dashboard View")  
