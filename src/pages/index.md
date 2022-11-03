@@ -59,6 +59,8 @@ https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posg
 `
 
 # Create a PostgresDB (standalone)
+
+### Create DB
 ```flyctl postgres create```.   
 *Note you will only see your DB password once*
 
