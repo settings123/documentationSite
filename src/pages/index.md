@@ -80,7 +80,7 @@ Add column in DB with default value of `true`:
 ```alter table users add column authorized boolean default true NOT NULL;```
 
 ### View all Columns in a Table
-Once connected to noiise database (See *Postgres Commands* section), view `users` table: 
+Once connected to noiise database (See *Postgres Commands* section), view `users` table:  
 ```\d+ users```  
 
 # Deploy an existing app
