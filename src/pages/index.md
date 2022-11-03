@@ -60,7 +60,7 @@ https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posg
 
 # Create a PostgresDB (standalone)
 ```flyctl postgres create```.   
-Details below, such as password. 
+*Note you will only see your DB password once*
 
 ### Connect to it
 ```flyctl postgres connect -a noiise-staging-db```. 
