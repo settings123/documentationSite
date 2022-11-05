@@ -19,21 +19,21 @@ There may also be some sort of `user ID`.
 
 ## User Pays
 
-	•	Every month when the user pays, we will receive an invoice.paid webhook.
-	•	We will then update our database to mark the user’s as “paid” attribute to true.
+Every month when the user pays, we will receive an `invoice.paid` webhook.  
+We will then update our database to mark the user’s as `paid` attribute to `true`.  
 
 ## User Is Past Due
 
-	•	If there is an issue with the payment for a particular month, we will receive an invoice.payment_failed webhook.
-	•	We will then update our database to mark the user’s as “paid” attribute to false.  
+If there is an issue with the payment for a particular month, we will receive an `invoice.payment_failed` webhook.  
+We will then update our database to mark the user’s as `paid` attribute to `false`.  
   
 ![Webhooks for Stripe](./assets/stripe/webhooks.png "Webhooks for Stripe")  
 
 ## User Clicks Calculate
 
-	•	We will check our database to see if “paid” is true for that user.
-	•	If so, we will continue with the calculation request
-	•	If not, we will redirect the user to some page.
+We will check our database to see if `paid` is `true` for that user.
+If so, we will continue with the calculation request
+If not, we will redirect the user to some page.
 
 ![Checking Authorization with DB](./assets/stripe/authorization.png "Stripe DB Checking")  
 
