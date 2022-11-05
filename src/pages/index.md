@@ -55,7 +55,7 @@ OR
 https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posgresql-table/ 
 
 3) Creating Mr. Chiu Manually:  
-`INSERT INTO users VALUES ('4bc140c3-17cc-4df5-bd50-08b962fce8ef', 'Chiu', 'chiu@moe.ca', '$2b$12$EHpM9qNmOw575EQtFNYugOfJ8xTXlwgk0cOB9E/xYkTtFwCydZMWG'); 
+`INSERT INTO users VALUES ('4bc140c3-17cc-4df5-bd50-08b962fce8ef', 'Chiu', 'chiu@moe.ca', '$2b$12$EHpM9qNmOw575EQtFNYugOfJ8xTXlwgk0cOB9E/xYkTtFwCydZMWG', 'false'); 
 `
 
 # Create a PostgresDB (standalone)
@@ -87,7 +87,8 @@ Add column in DB with default value of `true`:
 
 # Deploy an existing app
 In the earlier deployment example we were deploying for the first time. When you make changes and want to re-deploy (outside of a pipeline) you
-can do so through the ```flyctl deploy``` command.
+can do so through the ```flyctl -a noiise-staging deploy``` command.
+In this example it's structured: Flyctl = Fly's CLI, -a = app, noiise-staging = the app as it's named in Fly, deploy = effectively launch command, but for an existing app
 
 # TLS/SSL
 1) Go to the Fly.io dashboard and locate the Noiise app: https://fly.io/app/sign-in?return_to=%2Fdashboard  
