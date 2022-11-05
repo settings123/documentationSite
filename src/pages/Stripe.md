@@ -7,11 +7,11 @@ Then we will define the pricing model using the CLI or the Dashboard. (We will m
 
 ## User Registers
 
-We will create a checkout session that will call into one of our Vapor routes.
-	•	The frontend will pass in the `price ID` (which we get from the pricing model)
-	•	`success_url`: Where to send the user after they complete the payment.
-	⁃	We might append the `session ID` to the `success_url`
-	•	`cancel_url`: Where to send the user if they cancel the payment.
+We will create a checkout session that will call into one of our Vapor routes.  
+	•	The frontend will pass in the `price ID` (which we get from the pricing model)  
+	•	`success_url`: Where to send the user after they complete the payment.  
+	⁃	We might append the `session ID` to the `success_url`  
+	•	`cancel_url`: Where to send the user if they cancel the payment.  
 
 After the subscription signup succeeds, the customer is directed to the `success_url`, which initiates a `checkout.session.completed` webhook.
 
