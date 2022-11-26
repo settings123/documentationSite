@@ -67,9 +67,6 @@ https://www.postgresqltutorial.com/postgresql-tutorial/import-csv-file-into-posg
 ### Connect to it
 ```flyctl postgres connect -a noiise-staging-db```. 
 
-### Creating a Proxy to access it with a GUI (Optional)
-flyctl proxy 5432 -a noiise-staging-db
-
 ### Attach the DB to the existing app
 Run this first to unset the current one:  
 ```flyctl secrets unset -a noiise-staging DATABASE_URL ```  
@@ -84,6 +81,8 @@ Once connected to noiise database (See *Postgres Commands* section), view `users
 Add column in DB with default value of `true`:  
 ```alter table users add column authorized boolean default true NOT NULL;```
 
+### Creating a Proxy to access it with a GUI (Optional)
+flyctl proxy 5432 -a noiise-staging-db
 
 # Deploy an existing app
 In the earlier deployment example we were deploying for the first time. When you make changes and want to re-deploy (outside of a pipeline) you
